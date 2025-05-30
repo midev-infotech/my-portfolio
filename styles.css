@@ -1,0 +1,266 @@
+html, body {
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+}
+
+.navsection {
+    transition: left 2s ease-in-out;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    /* background-color: rgba(0, 0,200, 0.1); */
+    /* padding-right: 3px; */
+    /* background-color: #1E2019; */
+    /* background-color: #2E294E; */
+    border-right: 2px solid white;
+}
+
+.pp {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.nav-links {
+    /* padding-right: 5px; */
+    /* background-color: blueviolet; */
+}
+
+.nav-link-con {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 11px;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover {
+    color: brown;
+}
+
+.link-txt {
+    /* background-color: brown; */
+    width: 100%;
+    padding: 1px 0px;
+    /* width: fit-content; */
+    text-align: center;
+    color: '#1F5673';
+    /* border-top-right-radius: 50%; */
+    /* border-bottom-right-radius: 50%; */
+}
+.nav-tab-active {
+    text-transform: uppercase;
+    font-weight: 500;
+    justify-content: end;
+    
+}
+
+.nav-txt-active {
+background-color: #1F5673;
+    color: aliceblue;
+}
+
+.footer {
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.home-section {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/codes.jpg'); */
+    /* background-image: url('./images/25329.jpg'); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-color: grey; */
+    background: repeating-linear-gradient(to right, transparent 0%, transparent 50%, #D8DBE2 50%, #D8DBE2 100%);
+    /* background: repeating-linear-gradient(to right, rgba(0, 0,200, 0.1) 0%, rgba(0, 0,200, 0.1) 50%, transparent 50%, transparent 100%); */
+}
+
+.in-home {
+    /* background: repeating-linear-gradient(to bottom, transparent 0vh, transparent 80vh, green 80vh, green 100vh); */
+}
+
+.bio-images {
+    background-image: url(./images/my-bg-1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+}
+
+.home-skills {
+    /* border-top: 1px solid grey; */
+}
+.home-hire-me {
+    /* border-left: 1px solid grey; */
+}
+
+#hero-skills span {
+    opacity: 0;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.cspan{
+    background-color: brown;
+}
+.home-info{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.wave {
+  display: inline-block;
+  animation: wave-animation 2s infinite;
+  transform-origin: 70% 70%; /* pivot around the wrist */
+  font-size: 2rem;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(35deg); }
+  20% { transform: rotate(-35deg); }
+  30% { transform: rotate(35deg); }
+  40% { transform: rotate(-25deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.home-con {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#myText {
+    font-size: 24px;
+    font-family: monospace;
+    white-space: pre;
+}
+
+.char {
+    opacity: 0;
+    animation: fadeIn 0.4s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+    opacity: 1;
+    }
+}
+
+#typewriter::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.about-image {
+    background-image: url(./images/my-bg-1.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.btn-cv:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #ff5;
+}
+
+.css-skill-progress {
+    background: conic-gradient(#3498db 0% 70%, #e0e0e0 70% 100% );
+    position: relative;
+}
+.css-skill-progress::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+.css-skill-progress span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #333;
+    z-index: 2;
+}
+
+.html-skill-progress {
+    background: conic-gradient(#3498db 0% 85%, #e0e0e0 85% 100% );
+    position: relative;
+}
+.html-skill-progress::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+.html-skill-progress span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #333;
+    z-index: 2;
+}
+
+.js-skill-progress {
+    background: conic-gradient(#3498db 0% 60%, #e0e0e0 60% 100% );
+    position: relative;
+}
+.js-skill-progress::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+.js-skill-progress span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #333;
+    z-index: 2;
+}
+
+.bottom {
+    /* background-image: linear-gradient(rgba(0, 0, 100, 0.1), rgba(0, 0, 100, 0.1)); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
